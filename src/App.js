@@ -9,11 +9,6 @@ import Blog from './pages/Blog';
 import Contact from './pages/Contact';
 import Homepage from './pages/Home';
 
-// import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-// import Homepage from './Homepage';
-// import Activities from './Activities';
-// import Navbar from './Navbar.js';
-
 function App() {
 
 	let style = {
