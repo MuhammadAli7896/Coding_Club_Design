@@ -62,6 +62,8 @@ export default function Homepage() {
                     <span className="visually-hidden">Next</span>
                 </button>
             </div>
+
+            {/* Content  */}
             <div className='Content' style={{justifyContent: "center", alignItems: "center", margin: "15px", textAlign: "center"}}>
                 <h2>Coding Club </h2>
                 <h4>Vision Statement</h4>
