@@ -8,7 +8,7 @@ import pic6 from './assets/6.jpeg';
 
 export default function Homepage() {
     return (
-        <div className="Home"> 
+        <div className="Home">
             {/* carousel */}
             <div id="carouselExampleCaptions" className="carousel slide carousel-fade" data-bs-ride="carousel">
                 <div className="carousel-indicators">
@@ -62,20 +62,21 @@ export default function Homepage() {
                     <span className="visually-hidden">Next</span>
                 </button>
             </div>
-
-            <h2>Coding Club </h2>
-            <h4>Vision Statement</h4>
-            <p>The vision for this coding club is to raise awareness about the ever-evolving field of computer science. This club aims to introduce the student body with the latest trends in Software Development and bring them up-to-speed with the latest research activities.</p>
-            <h4>Mission Statement</h4>
-            <p>Our mission is to enable the student body to have global impact through innovative research, workshops, webinars and competitions. Through the spirit of hard work and competition, we want our students to be successful in research and obtaining technical skills.</p>
-            <h4>Objectives of this Club</h4>
-            <ul>
-                <li>Provide a strong foundation for student to grow their skills in computer science.</li>
-                <li>Develop the interest of Students in Competitive programming, speed programming and improve logic building skills.</li>
-                <li>Prepare the students to provide professional solutions to real life problems.</li>
-                <li>Enhance the problem-solving skills.</li>
-                <li>To develop a comprehensive, research-led society that imparts quality education, encourages Innovation, Entrepreneurship and Community Service.</li>
-            </ul>
+            <div className='Content' style={{justifyContent: "center", alignItems: "center", margin: "15px", textAlign: "center"}}>
+                <h2>Coding Club </h2>
+                <h4>Vision Statement</h4>
+                <p>The vision for this coding club is to raise awareness about the ever-evolving field of computer science. This club aims to introduce the student body with the latest trends in Software Development and bring them up-to-speed with the latest research activities.</p>
+                <h4>Mission Statement</h4>
+                <p>Our mission is to enable the student body to have global impact through innovative research, workshops, webinars and competitions. Through the spirit of hard work and competition, we want our students to be successful in research and obtaining technical skills.</p>
+                <h4>Objectives of this Club</h4>
+                <ul>
+                    <li>Provide a strong foundation for student to grow their skills in computer science.</li>
+                    <li>Develop the interest of Students in Competitive programming, speed programming and improve logic building skills.</li>
+                    <li>Prepare the students to provide professional solutions to real life problems.</li>
+                    <li>Enhance the problem-solving skills.</li>
+                    <li>To develop a comprehensive, research-led society that imparts quality education, encourages Innovation, Entrepreneurship and Community Service.</li>
+                </ul>
+            </div>
         </div >
     );
 }
