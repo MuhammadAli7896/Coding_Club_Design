@@ -1,9 +1,6 @@
 import pic1 from './assets/1.jpg';
 import pic2 from './assets/2.jpg';
 import pic3 from './assets/3.jpg';
-import pic4 from './assets/4.jpeg';
-import pic5 from './assets/5.jpeg';
-import pic6 from './assets/6.jpeg';
 
 
 export default function Homepage() {
