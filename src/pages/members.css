@@ -1,0 +1,21 @@
+.columns{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: -100px;
+    /* background-color: bisque; */
+    height: 50vh;
+}
+.item {
+    margin-left: 120px;
+}
+.item1 {
+    height: 50%; 
+}
+.item2 {
+    background-color: rgb(182, 69, 69);
+    grid-column-start: 2;
+    grid-column-end: 4;
+    height: 50%;
+    margin-left: -120px;
+    margin-right: 10vw;
+}
