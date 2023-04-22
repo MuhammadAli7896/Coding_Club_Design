@@ -6,7 +6,6 @@ export default function Events() {
     let styles = {
         heading: {
             borderBottom: "4px solid #6e6b6b",
-            // color: "#cc0707",
             margin: "10px",
         },
         subHeading: {
@@ -15,11 +14,9 @@ export default function Events() {
         },
         subsubHeading: {
             margin: "15px 13px 1px",
-            // borderBottom: "2px solid #6e6b6b",
-            position: "relative",
+            display: "flex",
+            alignItems: "center",
         },
-        // subsubHeading::before: {
-        // },
         container: {
             margin: "10px",
         },
@@ -27,12 +24,20 @@ export default function Events() {
             top: "0",
             left: "0",
             maxWidth: "100%",
-            padding: "15px",
+            padding: "15px 15px 5px",
         },
         image: {
             flex: "20%",
-            padding: "25px",
-        }
+            padding: "25px 25px ",
+            height: "auto",
+            width: "auto"
+        },
+        button: {
+            margin: "0px 15px",
+            left: "40%",
+            position: "absolute",
+            transform: "translateY(-20%)"
+        },
     }
     return (
         <div>
@@ -64,11 +69,34 @@ export default function Events() {
             <div>
                 <h3 style={styles.subHeading} >Upcoming Events</h3>
                 <h4 style={styles.subsubHeading}>HACKATHON June 2023</h4>
-                <div className="d-grid gap-2 d-md-flex justify-content-md-end">
-                    <button className="btn btn-outline-secondary me-md-2" type="button">Register</button>
-                    {/* <button className="btn btn-outline-success" type="button">Button</button> */}
-                </div>
                 <p style={styles.paragraph}>Effects present letters inquiry no an removed or friends. Desire behind latter me though in. Supposing shameless am he engrossed up additions. My possible peculiar together to. Desire so better am cannot he up before points. Remember mistaken opinions it pleasure of debating. Court front maids forty if aware their at. Chicken use are pressed removed.</p>
+                <div>
+                    <ul style={{marginTop: "-15px", marginLeft: "5px"}}>
+                        <li>Date: xx-yy-zz</li>
+                        <li>Venue: Location</li>
+                        <li>Time: xyz</li>
+                        <li>Rewards: Prizes</li>
+                    </ul>
+                </div>
+                <div style={{display: "block", height: "5vh"}}>
+                    <button className='btn btn-outline-secondary' style={styles.button} >Register for it</button>
+                </div>
+            </div>
+            <div>
+                {/* <h3 style={styles.subHeading} >Upcoming Events</h3> */}
+                <h4 style={styles.subsubHeading}>HACKATHON June 2023</h4>
+                <p style={styles.paragraph}>Effects present letters inquiry no an removed or friends. Desire behind latter me though in. Supposing shameless am he engrossed up additions. My possible peculiar together to. Desire so better am cannot he up before points. Remember mistaken opinions it pleasure of debating. Court front maids forty if aware their at. Chicken use are pressed removed.</p>
+                <div>
+                    <ul style={{marginTop: "-15px", marginLeft: "5px"}}>
+                        <li>Date: xx-yy-zz</li>
+                        <li>Venue: Location</li>
+                        <li>Time: xyz</li>
+                        <li>Rewards: Prizes</li>
+                    </ul>
+                </div>
+                <div style={{display: "block", height: "5vh"}}>
+                    <button className='btn btn-outline-secondary' style={styles.button} >Register for it</button>
+                </div>
             </div>
         </div>
     );
