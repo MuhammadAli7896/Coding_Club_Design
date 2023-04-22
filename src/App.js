@@ -14,7 +14,6 @@ function App() {
 	let style = {
 		footer: { // styling for footer
 			position: "relative",
-			display: "block",
 			left: "0",
 			bottom: "0",
 			width: "100%",
