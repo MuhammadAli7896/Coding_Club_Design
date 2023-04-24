@@ -1,5 +1,4 @@
 import React from 'react';
-// import "./App.css";
 import { Link, Route, Routes } from 'react-router-dom';
 import Activities from './pages/Activities';
 import Gallery from './pages/Gallery';
