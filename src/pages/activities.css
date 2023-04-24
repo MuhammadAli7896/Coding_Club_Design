@@ -1,0 +1,31 @@
+.all {
+    margin: 7px;
+}
+.title {
+    border-bottom: 4px solid #6e6b6b;
+    margin-bottom: 20px;
+    margin-top: 25px;
+    padding-left: 4px;
+}
+
+.content {
+    text-align: center;
+}
+.subcontent {
+    margin: 2px;
+}
+.heading {
+    border-bottom: 2px solid #6e6b6b;
+    margin: 30px 0px 15px 0px;
+    padding-bottom: 10px;
+    padding-right: 15px;
+}
+.subHeading {
+    text-decoration: underline;
+}
+.mainpara {
+    padding: 0px 20px;
+}
+.para {
+    padding-left: 2px;
+}
