@@ -19,7 +19,7 @@
     margin: 0vh 26vh 20vh 20vh;
     height: 63%;
     background-color: white;
-    box-shadow: 6px 5px 8px 1px #888888;
+    box-shadow: 4px 5px 8px 1px #888888;
     border: 1px solid black;
 }
 .image {
@@ -27,6 +27,7 @@
     width: 100%;
 }
 .caption {
+    border-top: 1px solid black;
     font-size: large;
     text-align: center;
     border-bottom-right-radius: 3px;
@@ -45,6 +46,3 @@
     list-style-type: none;
     line-height: 33px;
 }
-/* .details {
-    background-color: blue;
-} */
