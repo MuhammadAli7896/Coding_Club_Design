@@ -20,7 +20,7 @@ export default function Homepage() {
                     <div className="carousel-item active">
                         <img src={pic1} className="d-block w-100 " alt="laptop/device" />
                         <div className="carousel-caption d-none d-md-block">
-                            <h2>Welcome to Hi-Coderz</h2>
+                            <h2>Welcome to XYZ Coding Club</h2>
                             <p>This website is designed for a coding club.</p>
                             {/* <button className="btn btn-danger">Technology</button>
                                 <button className="btn btn-success">Development</button>
@@ -61,20 +61,26 @@ export default function Homepage() {
             </div>
 
             {/* Content  */}
-            <div className='Content' style={{justifyContent: "center", alignItems: "center", margin: "15px", textAlign: "center"}}>
-                <h2>Coding Club </h2>
-                <h4>Vision Statement</h4>
-                <p>The vision for this coding club is to raise awareness about the ever-evolving field of computer science. This club aims to introduce the student body with the latest trends in Software Development and bring them up-to-speed with the latest research activities.</p>
-                <h4>Mission Statement</h4>
-                <p>Our mission is to enable the student body to have global impact through innovative research, workshops, webinars and competitions. Through the spirit of hard work and competition, we want our students to be successful in research and obtaining technical skills.</p>
-                <h4>Objectives of this Club</h4>
-                <ul>
-                    <li>Provide a strong foundation for student to grow their skills in computer science.</li>
-                    <li>Develop the interest of Students in Competitive programming, speed programming and improve logic building skills.</li>
-                    <li>Prepare the students to provide professional solutions to real life problems.</li>
-                    <li>Enhance the problem-solving skills.</li>
-                    <li>To develop a comprehensive, research-led society that imparts quality education, encourages Innovation, Entrepreneurship and Community Service.</li>
-                </ul>
+            <div className='Content' style={{ justifyContent: "center", alignItems: "center", margin: "35px 25px 25px", textAlign: "center" }}>
+                {/* <h2>Coding Club </h2> */}
+                <div style={{ borderBottom: "2px solid gray", marginBottom: "5px" }}>
+                    <h4>Vision Statement</h4>
+                    <p>The vision for this coding club is to raise awareness about the ever-evolving field of computer science. This club aims to introduce the student body with the latest trends in Software Development and bring them up-to-speed with the latest research activities.</p>
+                </div>
+                <div style={{ borderBottom: "2px solid gray", margin: "15px 0px 0px" }}>
+                    <h4>Mission Statement</h4>
+                    <p>Our mission is to enable the student body to have global impact through innovative research, workshops, webinars and competitions. Through the spirit of hard work and competition, we want our students to be successful in research and obtaining technical skills.</p>
+                </div>
+                <div style={{ margin: "15px 0px 0px" }}>
+                    <h4>Objectives of this Club</h4>
+                    <ul>
+                        <li>Provide a strong foundation for student to grow their skills in computer science.</li>
+                        <li>Develop the interest of Students in Competitive programming, speed programming and improve logic building skills.</li>
+                        <li>Prepare the students to provide professional solutions to real life problems.</li>
+                        <li>Enhance the problem-solving skills.</li>
+                        <li>To develop a comprehensive, research-led society that imparts quality education, encourages Innovation, Entrepreneurship and Community Service.</li>
+                    </ul>
+                </div>
             </div>
         </div >
     );
