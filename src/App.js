@@ -7,23 +7,9 @@ import Members from './pages/Members';
 import Blog from './pages/Blog';
 import Contact from './pages/Contact';
 import Homepage from './pages/Home';
+import "./App.css"
 
 function App() {
-
-	let style = {
-		footer: { // styling for footer
-			position: "relative",
-			left: "0",
-			bottom: "0",
-			width: "100%",
-			color: "rgb(200, 207, 207)",
-			textAlign: "center",
-			marginTop: "7vh",
-			backgroundColor: "rgb(40, 53, 53)",
-			padding: "10px"
-		}
-	}
-
 	return (
 		<div className='App' >
 			{/* Navbar */}
@@ -77,7 +63,7 @@ function App() {
 
 			{/* footer */}
 			<div>
-				<div className='footer d-block pd-5' style={style.footer}>
+				<div className='footer d-block pd-5'>
 					<footer class="container" >
 						<p class="float-end"><a href="#">Back to top</a></p>
 						<p>© 2017–2023 Coding Club, Inc. ASAM codes  · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
