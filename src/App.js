@@ -57,8 +57,6 @@ function App() {
 				</div>
 			</nav>
 
-
-
 			{/* <!-- Sign up Modal --> */}
 
 			<div className="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
