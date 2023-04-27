@@ -1,3 +1,4 @@
+import { useRef, useState } from 'react';
 import pic4 from './assets/4.jpeg';
 import pic5 from './assets/5.jpeg';
 import pic6 from './assets/6.jpeg';
@@ -40,8 +41,55 @@ export default function Events() {
             transform: "translateY(-20%)"
         },
     }
+    let initialEvent = 'initial';
+    // let [event, setEvent] = useState(null);
+    let eventRef = useRef(initialEvent);
     return (
+
         <div>
+            <div>
+                <div className="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+                    <div className="modal-dialog modal-dialog-centered">
+                        <div className="modal-content">
+                            <div className="modal-header">
+                                <h1 className="modal-title fs-5" id="registerModalLabel">Sign Up Form</h1>
+                                <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div className="modal-body">
+                                <form>
+                                    <div className="mb-3">
+                                        <label for="registerInputName" className="form-label">Username</label>
+                                        <input type="text" className="form-control" id="registerInputName" placeholder='Enter Username' />
+                                        {/* <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div> */}
+                                    </div>
+                                    <div className="mb-3">
+                                        <label for="registerInputEmail1" className="form-label">Email address</label>
+                                        <input type="email" className="form-control" id="registerInputEmail1" aria-describedby="emailHelp" placeholder='Enter valid email address' />
+                                        <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
+                                    </div>
+                                    <div className="mb-3">
+                                        <label for="registerInputPassword1" className="form-label">Phone Number</label>
+                                        <input type="Number" className="form-control" id="registerInputNumber" placeholder='Enter Phone number' />
+                                    </div>
+                                    <fieldset disabled>
+                                        <div className="mb-3">
+                                            <label for="registerInputEvent" className="form-label">I want to register in: </label>
+                                            <input type="text" className="form-control" id="registerInputEvent" placeholder={eventRef.current} />
+                                        </div>
+                                    </fieldset>
+                                </form>
+                            </div>
+                            <div className="modal-footer" style={{ marginRight: "1vw" }}>
+                                {/* <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button> */}
+                                <button type="button" className="btn btn-primary">Register</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
             <h1 style={styles.heading}>Events</h1>
             <div className="contents">
                 <h3 style={styles.subHeading}>CODATHON Fall 2022</h3>
@@ -80,7 +128,7 @@ export default function Events() {
                     </ul>
                 </div>
                 <div className='button' style={{ display: "block", height: "5vh" }}>
-                    <button className='btn btn-outline-secondary' style={styles.button} >Register for it</button>
+                    <button className='btn btn-outline-secondary' style={styles.button} data-bs-toggle="modal" data-bs-target="#registerModal" type='button' onClick={(()=> eventRef.current = "event#1")}>Register for it</button>
                 </div>
             </div>
             <div className="contents">
@@ -96,9 +144,9 @@ export default function Events() {
                     </ul>
                 </div>
                 <div className='button' style={{ display: "block", height: "5vh" }}>
-                    <button className='btn btn-outline-secondary' style={styles.button} >Register for it</button>
+                    <button className='btn btn-outline-secondary' style={styles.button} data-bs-toggle="modal" data-bs-target="#registerModal" type='button' onClick={(()=> eventRef.current = "event#2")}>Register for it</button>
                 </div>
             </div>
-        </div>
+        </div >
     );
 }
