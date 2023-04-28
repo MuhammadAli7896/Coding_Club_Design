@@ -41,14 +41,18 @@ export default function Events() {
             transform: "translateY(-20%)"
         },
     }
-    let initialEvent = 'initial';
-    // let [event, setEvent] = useState(null);
-    let eventRef = useRef(initialEvent);
+
+    // updating the value of placeholder for which event user is registering
+    let [event, setEvent] = useState("a");
+    const updateEvent = (a) => {
+        setEvent((event) => event = `Event#${a}`);
+    }
+
     return (
 
         <div>
             <div>
-                <div className="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+                <div className="modal fade" id="registerModal" tabIndex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
                     <div className="modal-dialog modal-dialog-centered">
                         <div className="modal-content">
                             <div className="modal-header">
@@ -58,23 +62,23 @@ export default function Events() {
                             <div className="modal-body">
                                 <form>
                                     <div className="mb-3">
-                                        <label for="registerInputName" className="form-label">Username</label>
+                                        <label htmlFor="registerInputName" className="form-label">Username</label>
                                         <input type="text" className="form-control" id="registerInputName" placeholder='Enter Username' />
                                         {/* <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div> */}
                                     </div>
                                     <div className="mb-3">
-                                        <label for="registerInputEmail1" className="form-label">Email address</label>
+                                        <label htmlFor="registerInputEmail1" className="form-label">Email address</label>
                                         <input type="email" className="form-control" id="registerInputEmail1" aria-describedby="emailHelp" placeholder='Enter valid email address' />
                                         <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
                                     </div>
                                     <div className="mb-3">
-                                        <label for="registerInputPassword1" className="form-label">Phone Number</label>
+                                        <label htmlFor="registerInputPassword1" className="form-label">Phone Number</label>
                                         <input type="Number" className="form-control" id="registerInputNumber" placeholder='Enter Phone number' />
                                     </div>
                                     <fieldset disabled>
                                         <div className="mb-3">
-                                            <label for="registerInputEvent" className="form-label">I want to register in: </label>
-                                            <input type="text" className="form-control" id="registerInputEvent" placeholder={eventRef.current} />
+                                            <label htmlFor="registerInputEvent" className="form-label">I want to register in: </label>
+                                            <input type="text" className="form-control" id="registerInputEvent" placeholder={event} />
                                         </div>
                                     </fieldset>
                                 </form>
@@ -128,7 +132,7 @@ export default function Events() {
                     </ul>
                 </div>
                 <div className='button' style={{ display: "block", height: "5vh" }}>
-                    <button className='btn btn-outline-secondary' style={styles.button} data-bs-toggle="modal" data-bs-target="#registerModal" type='button' onClick={(()=> eventRef.current = "event#1")}>Register for it</button>
+                    <button className='btn btn-outline-secondary' style={styles.button} data-bs-toggle="modal" data-bs-target="#registerModal" type='button' onClick={() => updateEvent(1)}>Register for it</button>
                 </div>
             </div>
             <div className="contents">
@@ -144,7 +148,7 @@ export default function Events() {
                     </ul>
                 </div>
                 <div className='button' style={{ display: "block", height: "5vh" }}>
-                    <button className='btn btn-outline-secondary' style={styles.button} data-bs-toggle="modal" data-bs-target="#registerModal" type='button' onClick={(()=> eventRef.current = "event#2")}>Register for it</button>
+                    <button className='btn btn-outline-secondary' style={styles.button} data-bs-toggle="modal" data-bs-target="#registerModal" type='button' onClick={() => updateEvent(2)}>Register for it</button>
                 </div>
             </div>
         </div >
