@@ -78,6 +78,7 @@ export default function Events() {
                                     <fieldset disabled>
                                         <div className="mb-3">
                                             <label htmlFor="registerInputEvent" className="form-label">I want to register in: </label>
+                                            {/* Modififying the value of placeholder tag on runtime with the help of useState hook so only one modal is created and the value of event that user wants to register will be automatically updated */}
                                             <input type="text" className="form-control" id="registerInputEvent" placeholder={event} />
                                         </div>
                                     </fieldset>
