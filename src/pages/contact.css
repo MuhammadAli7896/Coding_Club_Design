@@ -1,0 +1,15 @@
+.heading {
+    border-bottom: 3px solid gray;
+    padding-bottom: 2vh;
+}
+
+@media (max-width: 768px) {
+    .heading {
+        justify-content: center;
+        display: flex;
+    }
+    .button button {
+        padding: 8px 8px;
+        font-size: large;
+    }
+}

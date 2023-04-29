@@ -1,7 +1,11 @@
+import "./contact.css"
+
 export default function Contact() {
     return (
         <div className="container my-3">
-            <h1>Contact Us</h1>
+            <div className="heading">
+                <h1 style={{marginBottom: "-10px"}}>Contact us</h1>
+            </div>
             <div className="mb-3">
                 <label htmlFor="exampleFormControlInput1" className="form-label">Email address</label>
                 <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="name@example.com" />
@@ -46,7 +50,7 @@ export default function Contact() {
                 <input className="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" />
                 <label className="form-check-label" htmlFor="inlineCheckbox3">There are very issues</label>
             </div>
-            <div style={{marginTop: "5vh", justifyContent: "center", display: "flex"}}>
+            <div style={{ marginTop: "5vh", justifyContent: "center", display: "flex" }} className="button">
                 <button type="button" className="btn btn-primary btn-lg">Submit</button>
             </div>
         </div>

@@ -51,6 +51,7 @@ export default function Events() {
     return (
 
         <div>
+            {/* Register modal */}
             <div>
                 <div className="modal fade" id="registerModal" tabIndex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
                     <div className="modal-dialog modal-dialog-centered">
@@ -94,7 +95,6 @@ export default function Events() {
             </div>
 
 
-
             <h1 style={styles.heading}>Events</h1>
             <div className="contents">
                 <h3 style={styles.subHeading}>CODATHON Fall 2022</h3>
@@ -132,13 +132,13 @@ export default function Events() {
                         <li>Rewards: Prizes</li>
                     </ul>
                 </div>
-                <div className='button' style={{ display: "block", height: "5vh" }}>
+                <div className='button'>
                     <button className='btn btn-outline-secondary' style={styles.button} data-bs-toggle="modal" data-bs-target="#registerModal" type='button' onClick={() => updateEvent(1)}>Register for it</button>
                 </div>
             </div>
             <div className="contents">
                 {/* <h3 style={styles.subHeading} >Upcoming Events</h3> */}
-                <h4 style={styles.subsubHeading}>HACKATHON June 2023</h4>
+                <h4 style={styles.subsubHeading} id='event2head'>HACKATHON June 2023</h4>
                 <p style={styles.paragraph}>Effects present letters inquiry no an removed or friends. Desire behind latter me though in. Supposing shameless am he engrossed up additions. My possible peculiar together to. Desire so better am cannot he up before points. Remember mistaken opinions it pleasure of debating. Court front maids forty if aware their at. Chicken use are pressed removed.</p>
                 <div>
                     <ul style={{ marginTop: "-15px", marginLeft: "5px" }}>
@@ -148,7 +148,7 @@ export default function Events() {
                         <li>Rewards: Prizes</li>
                     </ul>
                 </div>
-                <div className='button' style={{ display: "block", height: "5vh" }}>
+                <div className='button' style={{marginBottom: "13vh"}} id='event2btn'>
                     <button className='btn btn-outline-secondary' style={styles.button} data-bs-toggle="modal" data-bs-target="#registerModal" type='button' onClick={() => updateEvent(2)}>Register for it</button>
                 </div>
             </div>

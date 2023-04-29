@@ -9,11 +9,14 @@
     margin: 10px;
 }
 
-/* .contents {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: left;
-} */
+.button {
+    margin-bottom: 5vh;
+}
+
+#event2head {
+    /* margin-top: 5px; */
+    padding-top: 5vh;
+}
 
 @media (max-width: 768px) {
     .image-container img {
@@ -26,7 +29,17 @@
     }
     .button {
         display: flex;
-        width: 100%;
+        margin: 5vh 50vw 5vh;
         justify-content: center;
+    }
+    .button button {
+        /* margin-right: 2vw;
+        left: 50%; */
+    }
+    #event2head {
+        padding-top: 22px;
+    }
+    #event2btn {
+        margin-bottom: -2vh;
     }
 }
